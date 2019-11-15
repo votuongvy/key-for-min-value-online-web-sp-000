@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   name_key = []
-  name_hash.sort do |key, value|
+  name_hash.collect do |key, value|
     name_key = key
   end
   name_key[0]
